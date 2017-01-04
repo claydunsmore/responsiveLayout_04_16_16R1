@@ -1,0 +1,74 @@
+//Base
+
+* {
+  -moz-box-sizing: $borderBox;
+  box-sizing: $borderBox;
+}
+html {
+  background: $grey;
+}
+h1, p {
+  text-align: $center;
+}
+p {
+  @include margin(1em, 1.8em, 1em, 1.8em);
+}
+a {
+  @include display(inline-block);
+  text-decoration: $none;
+  transition: all .5s ease-in-out;
+
+  &:link {
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    color: $cyan;
+    -webkit-transform: $transformScale;
+    -ms-transform: $transformScale;
+    transform: $transformScale;
+  }
+  &:active {
+    color: $red;
+  }
+}
+img {
+  @include display(block);
+  @include maxWidth(300px);
+  margin: $zeroAuto;
+  border-radius: 5px;
+}
+.app__div--container {
+  width: 100%;
+  margin: $zeroAuto;
+}
+.div--tint {
+  background-color: $grey;
+}
+.white {
+  color: $white;
+}
+
+//This is an image hack used to hide alt text in images. This replaces -9999px method. (Author: Jeff Zeldman)
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//Clearfix method when you want to extend background behind images.
+
+.group:after {
+  @include display(table);
+  content: " ";
+  clear: $both;
+}
+.float-left {
+  float: $left;
+}
+.float-right {
+  float: $right;
+}

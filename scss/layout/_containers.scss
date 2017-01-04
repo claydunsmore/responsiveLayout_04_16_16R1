@@ -1,0 +1,63 @@
+//Main Content
+
+#portfolio, #skills {
+  @include padding(1.61em, 0, 1.61em, 0);
+}
+
+//Skills Content
+
+.skills__p--skills-image {
+  margin: $zeroAuto;
+}
+.skills__li--skill-list-icon-html5, .skills__li--skill-list-icon-css3 {
+  text-align: $center;
+}
+.skills__li--skill-list-icon-html5 {
+  @include margin(0, 0, 1.61em, 0);
+}
+.skills__li--skill-list-title-html5, .skills__li--skill-list-title-css{
+  @extend %centerAlignAndRelativePosition;
+  @include fontWeight(bold);
+}
+.skills__li--skill-list-title-html5 {
+  @include left(-.4em);
+}
+.skills__li--skill-list-title-css {
+  @include left(-.35em);
+}
+.icon-css3:before {
+  @extend %icomoonIconSizeAndHeight;
+  content: "\e902";
+  color: $blue;
+}
+.icon-html5:before {
+  @extend %icomoonIconSizeAndHeight;
+  content: "\e901";
+  color: $red;
+}
+.icon-name {
+  @include display(inline-block);
+  @include fontWeight(bold);
+  position: $relative;
+  @include top(-.5em);
+}
+
+
+
+@media screen and (min-width: 768px){
+
+  //Contact Content
+
+  .contact__p--contact-info {
+    @include margin(1em, 6em, 1em, 6em);
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  //Header Navigation
+
+  #main-nav ul {
+    float: $right;
+  }
+}

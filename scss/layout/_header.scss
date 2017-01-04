@@ -1,0 +1,87 @@
+//Header Content
+
+.header__h1--name-header{
+  @include margin(0, 0, 0, 0);
+  @include padding(1em, 0, 0, .8em);
+
+  @include desktop {
+    @include padding(1.45em, 0, 0, 1.7em);
+    float: $left;
+  }
+}
+.header__img--profile-picture {
+  @include maxWidth(250px);
+
+  @include tablet {
+    float: $right;
+    @include margin(0, 3.3em, 0, 3.3em);
+  }
+
+  @include desktop {
+    clear: $both;
+  }
+}
+.header__p--profile-content {
+  @include padding(0, 1em, 0, 1em);
+
+  @include tablet {
+    @include padding(0, 1.61em, 0, 1.61em);
+    position: $relative;
+    @include top(-2.7em);
+    text-align: $left;
+  }
+
+  @include desktop {
+    @include padding(0, 0, 0, 1.61em);
+    position: $relative;
+    @include top(2.7em);
+    clear: $left;
+  }
+}
+
+//Header Navigation
+
+nav ul li {
+  @include margin(.61em, 0, 0, 0);
+  text-align: $center;
+
+  @include tablet {
+    @include padding(1.61em, 1em, 1.61em, 1em);
+    text-align: $center;
+  }
+
+  & a{
+    @include display(block);
+    @include padding(.61em, 0, .61em, 0);
+  }
+}
+ul {
+  @include padding(0, 0, 0, 0);
+  list-style-type: $none;
+}
+.nav__ul--nav-list {
+  @include margin(1em, 1em, 1em, 1em);
+  @include display(-webkit-flex);
+  -webkit-flex-direction: $column;
+
+  @include display(flex);
+  flex-direction: $column;
+
+  @include tablet {
+    @include display(-webkit-flex);
+    -webkit-flex-direction: $row;
+    -webkit-justify-content: $center;
+
+    @include display(flex);
+    flex-direction: $row;
+    justify-content: $center;
+  }
+  & li {
+    background-color: #333;
+    border-radius: 5px;
+
+    @include tablet {
+      background-color: $grey;
+    }
+  }
+}

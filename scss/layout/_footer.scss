@@ -1,0 +1,60 @@
+//Footer Content
+
+.contact__p--contact-header {
+  @include margin(0, 0, 0, 0);
+  @include padding(4em, 0, 1.5em, .8em);
+}
+.contact__a--mobile-phone-link, .contact__p--footer-name, .contact__p--top-anchor {
+  @include display(inline-block);
+}
+.contact__a--mobile-phone-link {
+  @include tablet {
+    @include display(none);
+  }
+}
+.contact__p--footer-name, .contact__p--top-anchor {
+  @include padding(1.6em, 0, 1.6em, 0);
+}
+.contact__p--footer-name{
+  @include margin(0, 0, 0, 1em);
+}
+.contact__p--top-anchor {
+  @include margin(0, 1.5em, 0, 0);
+
+  @include tablet {
+    @include display(none);
+  }
+}
+
+//Footer Navigation
+
+.nav__ul--footer-nav, .contact__p--mobile-phone {
+  @include display(none);
+}
+.nav__ul--footer-nav{
+  @include tablet {
+    @include display(-webkit-flex);
+    -webkit-flex-direction: $row;
+    -webkit-justify-content: $flexEnd;
+
+    @include display(flex);
+    flex-direction: $row;
+    justify-content: $flexEnd;
+  }
+}
+.contact__p--mobile-phone {
+  @include tablet {
+    @include display(block);
+    @include fontWeight(800);
+    text-align: $center;
+    font-family: $defaultFontFamily;
+  }
+}
+.nav__ul--footer-nav li {
+  background-color: $grey;
+
+  @include tablet {
+    @include padding(1em, 1em, 0, 1em);
+    @include margin(0, 0, 0, 0);
+  }
+}

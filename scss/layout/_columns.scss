@@ -1,0 +1,22 @@
+//Columns
+
+.main__div--main-content{
+  -webkit-columns: $contentColumnPhone;
+  -moz-columns: $contentColumnPhone;
+  columns: $contentColumnPhone;
+
+  @include tablet{
+    -webkit-columns: $contentColumnTablet;
+    -webkit-column-gap: $contentColumnTabletGap;
+    -moz-columns: $contentColumnTablet;
+    -moz-column-gap: $contentColumnTabletGap;
+    columns: $contentColumnTablet;
+    column-gap: $contentColumnTabletGap;
+  }
+
+  @include desktop {
+    -webkit-columns: $contentColumnDesktop;
+    -moz-columns: $contentColumnDesktop;
+    columns: $contentColumnDesktop;
+  }
+}

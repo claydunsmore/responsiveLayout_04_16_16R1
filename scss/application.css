@@ -1,0 +1,294 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html {
+    background: #7f7f7f; }
+
+h1, p {
+    text-align: center; }
+
+p {
+    margin: 1em 1.8em 1em 1.8em; }
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all .5s ease-in-out; }
+a:link {
+    color: white; }
+a:visited {
+    color: white; }
+a:hover {
+    color: #00eeee;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+a:active {
+    color: red; }
+
+img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 5px; }
+
+.app__div--container {
+    width: 100%;
+    margin: 0 auto; }
+
+.div--tint {
+    background-color: #7f7f7f; }
+
+.white {
+    color: white; }
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+
+.group:after {
+    display: table;
+    content: " ";
+    clear: both; }
+
+.float-left {
+    float: left; }
+
+.float-right {
+    float: right; }
+
+.icon-css3:before, .icon-html5:before {
+    font-size: 2em;
+    line-height: 1.61em; }
+
+.skills__li--skill-list-title-html5, .skills__li--skill-list-title-css {
+    text-align: center;
+    position: relative; }
+
+.header__h1--name-header {
+    margin: 0 0 0 0;
+    padding: 1em 0 0 0.8em; }
+@media screen and (min-width: 1024px) {
+    .header__h1--name-header {
+        padding: 1.45em 0 0 1.7em;
+        float: left; } }
+
+.header__img--profile-picture {
+    max-width: 250px; }
+@media screen and (min-width: 768px) {
+    .header__img--profile-picture {
+        float: right;
+        margin: 0 3.3em 0 3.3em; } }
+@media screen and (min-width: 1024px) {
+    .header__img--profile-picture {
+        clear: both; } }
+
+.header__p--profile-content {
+    padding: 0 1em 0 1em; }
+@media screen and (min-width: 768px) {
+    .header__p--profile-content {
+        padding: 0 1.61em 0 1.61em;
+        position: relative;
+        top: -2.7em;
+        text-align: left; } }
+@media screen and (min-width: 1024px) {
+    .header__p--profile-content {
+        padding: 0 0 0 1.61em;
+        position: relative;
+        top: 2.7em;
+        clear: left; } }
+
+nav ul li {
+    margin: 0.61em 0 0 0;
+    text-align: center; }
+@media screen and (min-width: 768px) {
+    nav ul li {
+        padding: 1.61em 1em 1.61em 1em;
+        text-align: center; } }
+nav ul li a {
+    display: block;
+    padding: 0.61em 0 0.61em 0; }
+
+ul {
+    padding: 0 0 0 0;
+    list-style-type: none; }
+
+.nav__ul--nav-list {
+    margin: 1em 1em 1em 1em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column; }
+@media screen and (min-width: 768px) {
+    .nav__ul--nav-list {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; } }
+.nav__ul--nav-list li {
+    background-color: #333;
+    border-radius: 5px; }
+@media screen and (min-width: 768px) {
+    .nav__ul--nav-list li {
+        background-color: #7f7f7f; } }
+
+.contact__p--contact-header {
+    margin: 0 0 0 0;
+    padding: 4em 0 1.5em 0.8em; }
+
+.contact__a--mobile-phone-link, .contact__p--footer-name, .contact__p--top-anchor {
+    display: inline-block; }
+
+@media screen and (min-width: 768px) {
+    .contact__a--mobile-phone-link {
+        display: none; } }
+
+.contact__p--footer-name, .contact__p--top-anchor {
+    padding: 1.6em 0 1.6em 0; }
+
+.contact__p--footer-name {
+    margin: 0 0 0 1em; }
+
+.contact__p--top-anchor {
+    margin: 0 1.5em 0 0; }
+@media screen and (min-width: 768px) {
+    .contact__p--top-anchor {
+        display: none; } }
+
+.nav__ul--footer-nav, .contact__p--mobile-phone {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+    .nav__ul--footer-nav {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; } }
+
+@media screen and (min-width: 768px) {
+    .contact__p--mobile-phone {
+        display: block;
+        font-weight: 800;
+        text-align: center;
+        font-family: "Open Sans", sans-serif; } }
+
+.nav__ul--footer-nav li {
+    background-color: #7f7f7f; }
+@media screen and (min-width: 768px) {
+    .nav__ul--footer-nav li {
+        padding: 1em 1em 0 1em;
+        margin: 0 0 0 0; } }
+
+#portfolio, #skills {
+    padding: 1.61em 0 1.61em 0; }
+
+.skills__p--skills-image {
+    margin: 0 auto; }
+
+.skills__li--skill-list-icon-html5, .skills__li--skill-list-icon-css3 {
+    text-align: center; }
+
+.skills__li--skill-list-icon-html5 {
+    margin: 0 0 1.61em 0; }
+
+.skills__li--skill-list-title-html5, .skills__li--skill-list-title-css {
+    font-weight: bold; }
+
+.skills__li--skill-list-title-html5 {
+    left: -0.4em; }
+
+.skills__li--skill-list-title-css {
+    left: -0.35em; }
+
+.icon-css3:before {
+    content: "\e902";
+    color: blue; }
+
+.icon-html5:before {
+    content: "\e901";
+    color: red; }
+
+.icon-name {
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    top: -0.5em; }
+
+@media screen and (min-width: 768px) {
+    .contact__p--contact-info {
+        margin: 1em 6em 1em 6em; } }
+@media screen and (min-width: 1024px) {
+    #main-nav ul {
+        float: right; } }
+.main__div--main-content {
+    -webkit-columns: 767px 1;
+    -moz-columns: 767px 1;
+    columns: 767px 1; }
+@media screen and (min-width: 768px) {
+    .main__div--main-content {
+        -webkit-columns: 360px 2;
+        -webkit-column-gap: 0.1em;
+        -moz-columns: 360px 2;
+        -moz-column-gap: 0.1em;
+        columns: 360px 2;
+        column-gap: 0.1em; } }
+@media screen and (min-width: 1024px) {
+    .main__div--main-content {
+        -webkit-columns: 360px 3;
+        -moz-columns: 360px 3;
+        columns: 360px 3; } }
+
+body {
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    line-height: 1.61em;
+    margin: 0 auto;
+    color: black;
+    background: url("../img/ignasi_pattern_s.png");
+    font-feature-settings: "kern", "liga";
+    -moz-font-feature-settings: "kern", "liga";
+    -moz-font-feature-settings: "kern=1", "liga=1";
+    -ms-font-feature-settings: "kern", "liga";
+    -o-font-feature-settings: "kern", "liga";
+    -webkit-font-feature-settings: "kern", "liga"; }
+
+h1, a {
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif; }
+
+span {
+    font-weight: 400;
+    margin: 0 0.6em 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em; }
+
+.main__p--sub-heading {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em; }
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon.eot?y3u2sp");
+    src: url("../fonts/icomoon.eot?y3u2sp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?y3u2sp") format("truetype"), url("../fonts/icomoon.woff?y3u2sp") format("woff"), url("../fonts/icomoon.svg?y3u2sp#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+    /*use !important to prevent issues with browser extensions that change fonts*/
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }

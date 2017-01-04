@@ -1,0 +1,38 @@
+//Mixins
+
+@mixin fontWeight($fontWeight) {
+  font-weight: $fontWeight;
+}
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+@mixin textAlignAndPosition($left) {
+  text-align: center;
+  position: relative;
+  left: $left;
+}
+@mixin display($displaySetting) {
+  display: $displaySetting;
+}
+@mixin maxWidth($widthSetting) {
+  max-width: $widthSetting;
+}
+@mixin top($topPosition){
+  top: $topPosition;
+}
+@mixin left($leftPosition) {
+  left: $leftPosition;
+}
+@mixin tablet{
+  @media screen and (min-width: #{$tabletWidth}){
+    @content;
+  }
+}
+@mixin desktop{
+  @media screen and (min-width: #{$desktopWidth}){
+    @content;
+  }
+}

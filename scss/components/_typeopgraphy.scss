@@ -1,0 +1,35 @@
+//Typography
+
+body {
+  @include fontWeight(400);
+  font-family: $defaultFontFamily;
+  font-size: $defaultFontSize;
+  line-height: 1.61em;
+  margin: $zeroAuto;
+  color: $black;
+  background: url('../img/ignasi_pattern_s.png');
+
+  //Add ligatures to font style
+
+  font-feature-settings: $featureSetting;
+  -moz-font-feature-settings: $featureSetting;
+  -moz-font-feature-settings: "kern=1", "liga=1";
+  -ms-font-feature-settings: $featureSetting;
+  -o-font-feature-settings: $featureSetting;
+  -webkit-font-feature-settings: $featureSetting;
+}
+h1, a {
+  @include fontWeight(800);
+  font-family: $defaultFontFamily;
+}
+span {
+  @include fontWeight(400);
+  @include margin(0, .6em, 0, 0);
+  font-family: $defaultFontFamily;
+  font-size: $defaultFontSize;
+}
+.main__p--sub-heading {
+  @include fontWeight(600);
+  font-family: $defaultFontFamily;
+  font-size: $subheadingFont;
+}
